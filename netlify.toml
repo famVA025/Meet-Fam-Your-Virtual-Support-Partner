@@ -1,0 +1,6 @@
+# This repository is a static site with no build tooling (no package.json or
+# gulpfile), so no build step is needed. This overrides the "gulp build"
+# command set in the Netlify UI, which failed because gulp isn't installed.
+[build]
+  command = "echo 'No build step required'"
+  publish = "."
